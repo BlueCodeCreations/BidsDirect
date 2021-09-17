@@ -1,13 +1,19 @@
 import React from 'react';
-import { Navbar, Button } from 'react-bootstrap';
+import { Navbar, Button, Container } from 'react-bootstrap';
 
 const LoginPage = () => (
     <div>
         <div>
-            <Navbar>BidsDirect: Find The Best Fit For Your Next Project</Navbar>
-            <Button className="NavBar">test Button</Button>
+            <Navbar>BidsDirect: Find The Best Fit For Your Next Project
+            <button className="navButton">test Button</button>
+
+            </Navbar>
         </div>
-        hello from login page
+    <Container>
+        <div className='loginMenu'>
+        
+        </div>
+    </Container>
     </div>
 );
 

@@ -1,4 +1,16 @@
-.NavBar {
+.navbar {
+    background-color: rgb(237, 188, 29);
     display: flex;
-    justify-self: center;
+}
+.navButton {
+    color: silver;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.loginMenu {
+    background-color: silver;
+}
+#root {
+    background-color: rgb(79, 76, 76);
 }
