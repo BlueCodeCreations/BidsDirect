@@ -1,1 +1,4 @@
-
+.NavBar {
+    display: flex;
+    justify-self: center;
+}
