@@ -1,7 +1,17 @@
 import React from 'react';
 import '../styles/LoginForm.css';
+import { useState, propTypes } from 'react';
 
-const LoginForm = () => {
+const LoginForm = ({ loginFunc }) => {
+    const [user, setUser] = useState({ userame: '', password: '' });
+
+    const submitHandler = (e) => {
+        e.preventDefault;
+        
+        // con sole.log();
+        loginFunc(user);
+    };
+
     return (
         <div id="loginform">
             <h2 id="headerTitle">Login Form</h2>
@@ -15,7 +25,7 @@ const LoginForm = () => {
                     <input type="text" placeholder="Enter Your Password" />
                 </div>
                 <div id="button" className="row">
-                    <button>Log In</button>
+                    <button onClick={submitHandler}>Log In</button>
                 </div>
                 <div id="button" className="row">
                     <button>Create New Account</button>
@@ -23,6 +33,10 @@ const LoginForm = () => {
             </div>
         </div>
     );
+};
+
+LoginForm.propTypes = {
+    loginFunc: propTypes.function.isRequired,
 };
 
 export default LoginForm;

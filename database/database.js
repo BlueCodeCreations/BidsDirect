@@ -1,11 +1,13 @@
 // import { Mongoose } from 'mongoose';
 const mongoose = require('mongoose');
 
+//set up dotenv correctly
 const LOCAL_HOST = process.env.HOST;
 
-mongoose.connect(`http://${LOCAL_HOST}:27107/data`).then(() => {
-    console.log('database connected');
-});
+const connect = () =>
+    mongoose.connect('mongodb://localhost:27017/api').then(() => {
+        console.log('database connected');
+    });
 
 const userSchema = new mongoose.Schema({
     username: String,
@@ -35,3 +37,5 @@ const contractorSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 const Project = mongoose.model('Project', projectSchema);
 const Contractor = mongoose.model('Contractor', contractorSchema);
+
+module.exports = connect;

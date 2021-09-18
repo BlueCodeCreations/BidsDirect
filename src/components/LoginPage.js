@@ -7,16 +7,24 @@ import FrontImage from './FrontImage.js';
 import '../styles/LoginPage.css';
 import BottomBar from './BottomBar.js';
 
-const LoginPage = () => (
-    <div>
-        <NavBar />
-        <Container className="mainPage">
-            <LoginForm />
-            <HomeDataAPI />
-            <FrontImage />
-        </Container>
-        <BottomBar />
-    </div>
-);
+const LoginPage = () => {
+    const loginFunc = (user) => {
+        console.log(user);
+    };
+
+    return (
+        <div>
+            <NavBar />
+            <Container className="mainPage">
+                <LoginForm loginFunc={loginFunc} />
+                {/* <HomeDataAPI /> */}
+                <FrontImage />
+            </Container>
+            <BottomBar />
+        </div>
+    );
+};
+
+
 
 export default LoginPage;
