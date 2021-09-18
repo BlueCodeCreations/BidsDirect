@@ -44,10 +44,12 @@ li {
 }
 .navToggle.open span:first-child {
     transform: rotate(45deg) translate(4.4px, 4.4px);
+    background-color: orange
 }
 
 .navToggle.open span:last-child {
     transform: rotate(-45deg) translate(4.4px, -4.4px);
+    background-color: orange
 }
 .navToggle span {
     position: relative;
