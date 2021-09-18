@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
+import './styles/NavBar.css';
 
 const NavBar = () => {
     const [navStatus, useNavBar] = useState(false);
@@ -36,9 +37,7 @@ const NavBar = () => {
                                     For Contractors
                                 </a>
                             </li>
-                            <li>
-                        
-                            </li>
+                            <li></li>
                         </ul>
                     </nav>
                     <button
