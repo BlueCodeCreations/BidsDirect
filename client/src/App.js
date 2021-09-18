@@ -5,6 +5,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
 import ForConsumers from './components/ForConsumers';
+import ForContractors from './components/ForContractors';
 
 const App = () => (
 <Router>
@@ -14,6 +15,9 @@ const App = () => (
         </Route>
         <Route exact path='/ForConsumers' >
             <ForConsumers />
+        </Route>
+        <Route exact path='/ForContractors' >
+            <ForContractors />
         </Route>
     </Switch>
 </Router>

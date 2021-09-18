@@ -33,7 +33,7 @@ const NavBar = () => {
                                 </a>
                             </li>
                             <li>
-                                <a className="mainNavLink" href="#">
+                                <a className="mainNavLink" href="/ForContractors">
                                     For Contractors
                                 </a>
                             </li>
