@@ -1,21 +1,20 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-import '../styles/NavBar.css';
 
 //TODO: more to add here. do not change to implicit return
-const LandingPage = () => {
+const LoggedInContractor = () => {
     return (
         <>
             <NavBar
-                showLogin={true}
+                showLogout={true}
                 menuOptions={[
                     {
-                        itemName: 'For Consumers',
-                        href: '/ForConsumers'
+                        itemName: 'Current Projects', 
+                        href: '/CurrentProjects'
                     },
                     {
-                        itemName: 'For Contractors',
-                        href: '/ForContractors'
+                        itemName: 'Find New Projects', 
+                        href: '/FindNewProjects'
                     },
                 ]}
             />
@@ -23,4 +22,4 @@ const LandingPage = () => {
     );
 };
 
-export default LandingPage;
+export default LoggedInContractor;

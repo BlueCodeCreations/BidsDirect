@@ -3,19 +3,14 @@ import NavBar from '../components/NavBar';
 import '../styles/NavBar.css';
 
 //TODO: more to add here. do not change to implicit return
-const LandingPage = () => {
+const ForConsumers = () => {
     return (
         <>
             <NavBar
-                showLogin={true}
                 menuOptions={[
                     {
-                        itemName: 'For Consumers',
-                        href: '/ForConsumers'
-                    },
-                    {
-                        itemName: 'For Contractors',
-                        href: '/ForContractors'
+                        itemName: 'Login Page',
+                        href: '/'
                     },
                 ]}
             />
@@ -23,4 +18,4 @@ const LandingPage = () => {
     );
 };
 
-export default LandingPage;
+export default ForConsumers;
